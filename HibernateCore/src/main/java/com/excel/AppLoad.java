@@ -15,8 +15,8 @@ public class AppLoad {
 		 * If no rows in db then it throws Exception : org.hibernate.ObjectNotFoundException
 		 */
 		DBUser obj = null;
-//		obj = (DBUser)session.load(DBUser.class,105);
-//		System.out.println("AppGet.main() 1" + obj.getUsername());
+		obj = (DBUser)session.load(DBUser.class,105);
+		System.out.println("AppGet.main() 1" + obj.getUsername());
 		
 		
 		/**
@@ -31,4 +31,4 @@ public class AppLoad {
 		
 		session.close();
 	}
-}
+} // Previous AppGet
