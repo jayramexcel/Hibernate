@@ -15,18 +15,18 @@ public class AppLoad {
 		 * If no rows in db then it throws Exception : org.hibernate.ObjectNotFoundException
 		 */
 		DBUser obj = null;
-		obj = (DBUser)session.load(DBUser.class,105);
+		obj = (DBUser)session.load(DBUser.class,104);
 		System.out.println("AppGet.main() 1" + obj.getUsername());
-		
 		
 		/**
 		 * Returns Void
 		 * its Early Loading
 		 */
 		obj = new DBUser();
-		session.load(obj,101);
+		session.load(obj,104);
+		
 		System.out.println("AppGet.main() 2" + obj);
-//		
+
 		session.getTransaction().commit();
 		
 		session.close();

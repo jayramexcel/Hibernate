@@ -13,11 +13,12 @@ public class AppDelete {
 		session.beginTransaction();
 
 		DBUser user = new DBUser();
-		user.setUserId(107);
-		user.setUsername("superman");
+		user.setUserId(111);
+		
+/*		user.setUsername("superman");
 		user.setCreatedBy("system Engineer");
 		user.setCreatedDate(new Date());
-		/**
+*/		/**
 		 * Returns VOID
 		 * Selects if row is there..if there then deletes...else ignores
 		 */

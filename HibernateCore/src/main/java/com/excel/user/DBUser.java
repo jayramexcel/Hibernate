@@ -60,6 +60,11 @@ public class DBUser implements java.io.Serializable {
 		this.createdBy = createdBy;
 	}
 
+	/**
+	 * @Temporal is used in hibernate entity with a entity variable. 
+	 * @Temporal defines the TemporalType. TemporalType can be like TemporalType.TIMESTAMP, TemporalType.DATE and TemporalType.TIME.
+	 * @return
+	 */
 	@Temporal(TemporalType.DATE)
 	@Column(name = "CREATED_DATE", nullable = false, length = 7)
 	public Date getCreatedDate() {

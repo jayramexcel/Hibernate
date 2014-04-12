@@ -14,8 +14,8 @@ public class AppGet {
 		 * Its early loading
 		 * If no rows in db then it returns null
 		 */
-		DBUser obj = (DBUser)session.get(DBUser.class,105);
-//		System.out.println("AppGet.main()" + obj);
+		DBUser obj = (DBUser)session.get(DBUser.class,104);
+		System.out.println("AppGet.main()" + obj);
 		session.getTransaction().commit();
 		
 		session.close();

@@ -16,9 +16,9 @@ public class CustomerClientSave {
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
 		
-		CompKey k = new CompKey(1, 7);
+		CompKey compKey = new CompKey(1, 7);
 		CustomerBean cb = new CustomerBean();
-		cb.setKey(k);		
+		cb.setKey(compKey);		
 		cb.setAmount(50000);
 							
 		session.save(cb);

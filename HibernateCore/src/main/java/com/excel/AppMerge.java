@@ -13,12 +13,12 @@ public class AppMerge {
 		session.beginTransaction();
 
 		DBUser user = new DBUser();
-		user.setUserId(109);
-		user.setUsername("superman");
+		user.setUserId(113);
+		user.setUsername("superman1");
 		user.setCreatedBy("system Eng2");
 		user.setCreatedDate(new Date());
 		/**
-		 * uses Select to check If row is present then it updates else it inserts
+		 * uses Select to check If row is present then it updates else it inserts a new row in DB
 		 * It retruns the POJO Object
 		 */
 		DBUser obj = (DBUser)session.merge(user);
