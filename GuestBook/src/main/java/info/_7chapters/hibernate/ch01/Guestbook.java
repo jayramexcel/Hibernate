@@ -1,4 +1,4 @@
-package info._7chapters.hibernate.ch01;
+package com.tutorial.hibernate.ch01;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

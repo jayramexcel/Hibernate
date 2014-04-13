@@ -7,7 +7,7 @@
         <property name="connection.username">tutorial</property>
         <property name="connection.password">tutorial</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-        <!-- <mapping resource="info/_7chapters/hibernate/ch01/Guestbook.hbm.xml"/> -->
-        <mapping class="info._7chapters.hibernate.ch01.Guestbook"/>
+        <!-- <mapping resource="com/tutorial/hibernate/ch01/Guestbook.hbm.xml"/> -->
+        <mapping class="com.tutorial.hibernate.ch01.Guestbook"/>
     </session-factory>
 </hibernate-configuration>
