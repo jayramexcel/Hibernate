@@ -14,6 +14,6 @@
 		<property name="show_sql">true</property>
 
 		<mapping
-			resource="info/_7chapters/hibernate/mappings/component/Person.hbm.xml" />
+			resource="com/tutorial/hibernate/mappings/component/Person.hbm.xml" />
 	</session-factory>
 </hibernate-configuration>
