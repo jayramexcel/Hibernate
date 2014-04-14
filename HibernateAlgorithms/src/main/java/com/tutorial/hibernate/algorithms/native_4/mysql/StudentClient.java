@@ -32,7 +32,7 @@ class StudentClient
 		StudentBean st1 = new StudentBean();
 
 	
-		String name = "Roma";
+		String name = "Raja";
 		float tot_m = 500;
 
 		//st1.setSid(sid);

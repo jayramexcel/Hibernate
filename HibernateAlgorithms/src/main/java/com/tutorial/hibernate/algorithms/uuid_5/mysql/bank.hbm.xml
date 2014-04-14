@@ -5,14 +5,15 @@
 
 <hibernate-mapping>
 
-	<class name="com.tutorial.hibernate.algorithms.uuid_5.mysql.Bank" table = "bank">
-		
+	<class name="com.tutorial.hibernate.algorithms.uuid_5.mysql.Bank"
+		table="bank">
+
 		<id name="acno">
-			<generator class = "uuid"/>
+			<generator class="uuid" />
 		</id>
 
-		<property name="name"/>		
-		
+		<property name="name" />
+
 	</class>
-	
+
 </hibernate-mapping>
