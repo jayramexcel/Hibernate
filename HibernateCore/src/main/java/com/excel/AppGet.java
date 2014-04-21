@@ -8,7 +8,11 @@ import com.excel.util.HibernateUtil;
 public class AppGet {
 	public static void main(String[] args) {
 		Session session = HibernateUtil.getSessionFactory().openSession();
-		session.beginTransaction();
+		/**
+		 * session.beginTransaction() is not required when you just query the DB.
+		 * session.getTransaction().commit() is also not Required
+		 */
+//		session.beginTransaction();
 		/**
 		 * Returns POJO Object
 		 * Its early loading
@@ -16,7 +20,7 @@ public class AppGet {
 		 */
 		DBUser obj = (DBUser)session.get(DBUser.class,104);
 		System.out.println("AppGet.main()" + obj);
-		session.getTransaction().commit();
+//		session.getTransaction().commit();
 		
 		session.close();
 	}
