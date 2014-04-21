@@ -15,13 +15,12 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
-public class EmployeeClient {
+public class EmployeeClient { 
 	private static SessionFactory factory;
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		try{ 
 			factory = new Configuration().configure().buildSessionFactory(); 
 			
@@ -29,8 +28,8 @@ public class EmployeeClient {
 			System.err.println("Failed to create sessionFactory object." + ex); 
 			throw new ExceptionInInitializerError(ex); 
 		}
-//		criteriaExamples();
-		projections();
+		criteriaExamples();
+//		projections();
 	}
 	
 	public static void criteriaExamples(){
@@ -67,8 +66,8 @@ public class EmployeeClient {
 			// AND OR Conditions Ends
 			
 			// For Order
-			cr.add(Restrictions.gt("salary", new BigDecimal(2000)));
-			cr.addOrder(Order.desc("salary"));
+//			cr.add(Restrictions.gt("salary", new BigDecimal(2000)));
+//			cr.addOrder(Order.desc("salary"));
 //			cr.addOrder(Order.asc("salary"));
 			// For Order
 			
@@ -79,7 +78,8 @@ public class EmployeeClient {
 				System.out.print(" Last Name: " + employee.getLastName()); 
 				System.out.println(" Salary: " + employee.getSalary()); 
 			}
-			System.out.println("EmployeeClient.main()" + employees.size());
+			
+			System.out.println("Employee Size is " + employees.size());
 			tx.commit();
 		}catch(HibernateException exp){
 			exp.printStackTrace();
