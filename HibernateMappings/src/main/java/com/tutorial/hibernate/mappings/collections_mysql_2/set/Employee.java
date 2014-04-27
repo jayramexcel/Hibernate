@@ -9,9 +9,6 @@ public class Employee {
 	private String lastName; 
 	private int salary; 
 	private Set certificates; 
-//	private List certificates; // For List Only
-//	private Collection certificates; // For Bag only
-//	private Map certificates; // Only For Map
 	public Employee() {} 
 	public Employee(String fname, String lname, int salary) { 
 		this.firstName = fname; this.lastName = lname; this.salary = salary; 
