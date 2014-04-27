@@ -24,8 +24,6 @@ public class One2ManyClient {
 			System.err.println("Failed to create sessionFactory object." + ex); 
 			throw new ExceptionInInitializerError(ex); 
 		}
-
-
 		HashSet set1 = new HashSet();
 		
 		set1.add(new Certificate("SCJP")); 
